@@ -109,7 +109,7 @@ body::after {
 }
 
 .main::after {
-  content: "🐈⬛";
+  content: "🐈💩";
   position: absolute;
   bottom: -20px;
   right: -20px;
@@ -139,7 +139,7 @@ body::after {
 }
 
 .form-section h2::before {
-  content: "🐱";
+  content: "😸";
   font-size: 2rem;
 }
 
@@ -161,7 +161,7 @@ body::after {
   font-family: inherit;
   display: block;
   text-align: left;
-  color: #333333;  /* CHANGED: Dark gray text so you can see what you type */
+  color: #812b5a;  
 }
 
 .input-field:focus, .textarea-field:focus {
@@ -239,12 +239,12 @@ body::after {
 }
 
 .messages-section h2::before {
-  content: "😺";
+  content: "✨";
   font-size: 2rem;
 }
 
 .messages-section h2::after {
-  content: "😻";
+  content: "✨";
   font-size: 2rem;
 }
 
