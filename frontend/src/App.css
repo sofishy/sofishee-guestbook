@@ -161,6 +161,7 @@ body::after {
   font-family: inherit;
   display: block;
   text-align: left;
+  color: #333333;  /* CHANGED: Dark gray text so you can see what you type */
 }
 
 .input-field:focus, .textarea-field:focus {
