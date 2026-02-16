@@ -12,6 +12,9 @@ body {
   color: #8b4c61;
   position: relative;
   overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Cute floating hearts background */
@@ -36,6 +39,7 @@ body::after {
 
 .app {
   max-width: 800px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -55,18 +59,21 @@ body::after {
   margin-bottom: 10px;
   animation: bounce 2s infinite;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .header h1::before {
   content: "🌸";
   margin-right: 15px;
   font-size: 3rem;
+  display: inline-block;
 }
 
 .header h1::after {
   content: "🌸";
   margin-left: 15px;
   font-size: 3rem;
+  display: inline-block;
 }
 
 .header p {
@@ -77,6 +84,7 @@ body::after {
   border-radius: 50px;
   backdrop-filter: blur(5px);
   border: 2px solid white;
+  margin: 0 auto;
 }
 
 /* Main Card */
@@ -86,6 +94,7 @@ body::after {
   box-shadow: 0 20px 40px rgba(255, 105, 180, 0.3), 0 0 0 5px #fff5f8;
   overflow: hidden;
   position: relative;
+  margin: 0 auto;
 }
 
 /* Decorative elements */
@@ -115,6 +124,7 @@ body::after {
   background: #fff5f8;
   border-bottom: 3px dashed #ffb6c1;
   position: relative;
+  text-align: center;
 }
 
 .form-section h2 {
@@ -123,7 +133,9 @@ body::after {
   font-size: 2rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
+  text-align: center;
 }
 
 .form-section h2::before {
@@ -131,16 +143,24 @@ body::after {
   font-size: 2rem;
 }
 
+.form-section h2::after {
+  content: "💕";
+  font-size: 2rem;
+}
+
 .input-field, .textarea-field {
   width: 100%;
+  max-width: 500px;
   padding: 15px 20px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto;
   border: 3px solid #ffb6c1;
   border-radius: 30px;
   font-size: 16px;
   transition: all 0.3s;
   background: white;
   font-family: inherit;
+  display: block;
+  text-align: left;
 }
 
 .input-field:focus, .textarea-field:focus {
@@ -153,6 +173,7 @@ body::after {
 .input-field::placeholder, .textarea-field::placeholder {
   color: #ffb6c1;
   font-style: italic;
+  text-align: left;
 }
 
 .textarea-field {
@@ -175,8 +196,11 @@ body::after {
   letter-spacing: 2px;
   box-shadow: 0 5px 0 #d44d8c;
   border: 2px solid white;
-  width: 100%;
+  width: auto;
+  min-width: 250px;
   font-family: inherit;
+  display: inline-block;
+  margin: 0 auto;
 }
 
 .submit-btn:hover {
@@ -199,6 +223,7 @@ body::after {
 .messages-section {
   padding: 40px;
   background: white;
+  text-align: center;
 }
 
 .messages-section h2 {
@@ -207,7 +232,9 @@ body::after {
   font-size: 2rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
+  text-align: center;
 }
 
 .messages-section h2::before {
@@ -230,6 +257,8 @@ body::after {
   background: #fff9fb;
   border-radius: 40px;
   border: 3px dashed #ffb6c1;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .loading::before {
@@ -243,10 +272,12 @@ body::after {
   content: "💭";
   margin-right: 10px;
   font-size: 2rem;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .no-messages::after {
-  content: " Be the first! 💕";
+  content: "Be the first! 💕";
   display: block;
   font-size: 1rem;
   color: #ff8ab5;
@@ -259,12 +290,13 @@ body::after {
   color: #ff4d6d;
   padding: 20px;
   border-radius: 30px;
-  margin-bottom: 25px;
+  margin: 0 auto 25px auto;
   text-align: center;
   border: 3px solid #ffb6c1;
   font-size: 1.1rem;
   font-weight: bold;
   position: relative;
+  max-width: 500px;
 }
 
 .error-message::before {
@@ -279,6 +311,8 @@ body::after {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: center;
+  width: 100%;
 }
 
 /* Message Cards */
@@ -290,10 +324,14 @@ body::after {
   border: 3px solid white;
   box-shadow: 0 5px 15px rgba(255, 105, 180, 0.2);
   position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .message-card:hover {
-  transform: translateX(10px) scale(1.02);
+  transform: translateY(-5px) scale(1.02);
   box-shadow: 0 10px 25px rgba(255, 105, 180, 0.3);
   border-color: #ffb6c1;
 }
@@ -317,6 +355,8 @@ body::after {
   margin-bottom: 15px;
   padding-bottom: 10px;
   border-bottom: 2px dashed #ffb6c1;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .message-name {
@@ -371,14 +411,13 @@ body::after {
   to { transform: rotate(360deg); }
 }
 
-/* Floating hearts animation */
-@keyframes float {
-  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
-  100% { transform: translateY(-100px) rotate(20deg); opacity: 0; }
-}
-
 /* Responsive Design */
 @media (max-width: 600px) {
+  body {
+    padding: 10px;
+    align-items: flex-start;
+  }
+  
   .header h1 {
     font-size: 2.5rem;
   }
@@ -386,6 +425,7 @@ body::after {
   .header h1::before,
   .header h1::after {
     font-size: 2rem;
+    margin: 0 8px;
   }
   
   .form-section, .messages-section {
@@ -400,6 +440,15 @@ body::after {
   
   .message-date {
     align-self: flex-start;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    min-width: auto;
+  }
+  
+  .input-field, .textarea-field {
+    max-width: 100%;
   }
 }
 
