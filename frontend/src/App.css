@@ -63,14 +63,14 @@ body::after {
 }
 
 .header h1::before {
-  content: "🐱";
+  content: "😸";
   margin-right: 15px;
   font-size: 3rem;
   display: inline-block;
 }
 
 .header h1::after {
-  content: "😺";
+  content: "😸";
   margin-left: 15px;
   font-size: 3rem;
   display: inline-block;
@@ -136,18 +136,6 @@ body::after {
   justify-content: center;
   gap: 10px;
   text-align: center;
-}
-
-.form-section h2::before {
-  content: "😸";  /* Open-eye cat on left */
-  font-size: 2rem;
-  margin-right: 10px;
-}
-
-.form-section h2::after {
-  content: "😸";  /* Open-eye cat on right */
-  font-size: 2rem;
-  margin-left: 10px;
 }
 
 .input-field, .textarea-field {
