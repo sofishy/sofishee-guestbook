@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import './App.css'
 
-// Your backend URL
-const API_URL = 'https://fictional-space-zebra-5g46gw9x9q4p24pj5-3000.app.github.dev/guestbook';
+// Your deployed backend URL
+const API_URL = 'https://sofishee-guestbook-3nw1.vercel.app/guestbook';
 
 function App() {
   const [messages, setMessages] = useState([]);
@@ -70,7 +70,7 @@ function App() {
       <main className="main">
         {/* Form Section */}
         <section className="form-section">
-          <h2>Leave a message</h2>
+          <h2>🐱 Leave a message 🐱</h2>
           <form onSubmit={handleSubmit}>
             <input
               type="text"
