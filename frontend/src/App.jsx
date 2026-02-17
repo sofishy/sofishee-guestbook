@@ -70,7 +70,7 @@ function App() {
       <main className="main">
         {/* Form Section */}
         <section className="form-section">
-          <h2>🐱 Leave a message 🐱</h2>
+          <h2>😸 Leave a message 😸</h2>
           <form onSubmit={handleSubmit}>
             <input
               type="text"
