@@ -139,13 +139,15 @@ body::after {
 }
 
 .form-section h2::before {
-  content: "😸";
+  content: "😸";  /* Open-eye cat on left */
   font-size: 2rem;
+  margin-right: 10px;
 }
 
 .form-section h2::after {
-  content: "😸";
+  content: "😸";  /* Open-eye cat on right */
   font-size: 2rem;
+  margin-left: 10px;
 }
 
 .input-field, .textarea-field {
